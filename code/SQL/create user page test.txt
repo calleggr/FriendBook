@@ -1,0 +1,12 @@
+CALL createUser_Page('test', 'test', 'test', 'testemail', 'password', 'M');
+
+CALL createPost(0,1,'blah blah',1);
+
+call createNote( 1, 1,  'haha i bet he does' );
+
+call userLikesNote(0,1);
+
+call sendMessage(2,4,'hey dude');
+
+INSERT INTO User_Liking_Cat(User_ID, CName, NumLikes)
+Values(2,'Cars', 1)
